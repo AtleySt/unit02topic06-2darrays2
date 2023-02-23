@@ -38,6 +38,10 @@ public class Minesweeper {
         }
     }
 
+    public static int[][] makeNeighborBoard(boolean[][] board) {
+        
+    }
+
     public static void main(String[] args) {
         //print2dArray(makeMineSweeperBoard(5, 4, .25));
         printMinesweeperBoard(makeMineSweeperBoard(7, 7, .1));
