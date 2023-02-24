@@ -5,7 +5,7 @@ public class DiceRolls {
         return result;
     }
     public static void twoD6Probabilities() {
-        final int NTRIALS = 100000;
+        final int NTRIALS = 10000000;
         double twoRolls = 0;
         double threeRolls = 0;
         double fourRolls = 0;
@@ -81,7 +81,18 @@ public class DiceRolls {
             probabilities[k] = frequencies[k] / 36.0;
         }
         System.out.println();
-        System.out.println(probabilities[2] + " " + probabilities[3]+ " " + probabilities[4]+ " " + probabilities[5]+ " " + probabilities[6]+ " " + probabilities[7]+ " " + probabilities[8]+ " " + probabilities[9]+ " " + probabilities[10]+ " " + probabilities[11]+ " " + probabilities[12]);
+        System.out.println("Probabilty of a sum of 2: " + probabilities[2]);
+        System.out.println("Probabilty of a sum of 3: " + probabilities[3]);
+        System.out.println("Probabilty of a sum of 4: " + probabilities[4]);
+        System.out.println("Probabilty of a sum of 5: " + probabilities[5]);
+        System.out.println("Probabilty of a sum of 6: " + probabilities[6]);
+        System.out.println("Probabilty of a sum of 7: " + probabilities[7]);
+        System.out.println("Probabilty of a sum of 8: " + probabilities[8]);
+        System.out.println("Probabilty of a sum of 9: " + probabilities[9]);
+        System.out.println("Probabilty of a sum of 10: " + probabilities[10]);
+        System.out.println("Probabilty of a sum of 11: " + probabilities[11]);
+        System.out.println("Probabilty of a sum of 12: " + probabilities[12]);
+        //System.out.println(probabilities[2] + " " + probabilities[3]+ " " + probabilities[4]+ " " + probabilities[5]+ " " + probabilities[6]+ " " + probabilities[7]+ " " + probabilities[8]+ " " + probabilities[9]+ " " + probabilities[10]+ " " + probabilities[11]+ " " + probabilities[12]);
     }
     public static void main(String[] args) {
         twoD6Probabilities();
